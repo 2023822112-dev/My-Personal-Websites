@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auni Asfarina's Personal Website</title>
+  <style>
+
+   /* General Page Setup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFB6C1;
+  color: #a1a1a1;
+  display: flex;
+  flex-direction: column;
+  min-height: 150vh;
+}
+header {
+      background: url('images/header.jpg') no-repeat center center;
+      background-size: cover; 
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      padding: 40px 0 10px;
+      align-items: center;   
+    }
+
+/* NAVBAR  */
+nav {
+  position: static;
+  top: 10px;
+  z-index: 20;
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: linear-gradient(to right, #F9F5EE, #FAF7FF);
+  padding: 20px 25px;
+  border-radius: 50px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #6A4BA3;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #E9DFFF;
+  color: #4a2f77;
+}
+
+
+/* Main content */
+main {
+  flex: 1;
+  text-align: center;
+  background-color:#DDA0DD;
+  padding: 50px 40px;
+  margin: 20px auto;
+  width: 95%;
+  max-width: 1050px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+main h2 {
+  color: #fff0fa;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+
+main p {
+  max-width: 1000px;
+  margin: 10px auto;
+  line-height: 1.6;
+  font-size: 1em;
+  color: black;
+}
+
+/* Footer */
+footer {
+  background: #DDA0DD;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: auto;
+}
+
+
+    /* Hobbies Grid */
+    .hobby-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+      justify-items: center;
+    }
+
+    .hobby-card {
+      background: rgba(255,255,255,0.4);
+      padding: 25px;
+      border-radius: 20px;
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #2c0d2e;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hobby-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    }
+
+  </style>
+</head>
+
+<body>
+  <header> 
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="aboutme.html">ABOUT ME</a></li>
+      <li><a href="family.html">FAMILY</a></li>
+      <li><a href="experience.html">EXPERIENCE</a></li>
+      <li><a href="friends.html">FRIENDS</a></li>
+      <li><a href="education.html">EDUCATION</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="favourites.html">FAVOURITES</a></li>
+      <li><a href="hobby.html">HOBBY</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>My Hobbies</h2> 
+    <p>These are some of the activities I love doing in my free time 💫</p>
+
+    <audio id="backgroundMusic" autoplay loop>
+      <source src="audio/.mp3" type="audio/mpeg">  
+    </audio>
+
+    <!-- 🌸 Hobbies Grid -->
+    <div class="hobby-grid">
+      <div class="hobby-card">🎨 Painting</div>
+      <div class="hobby-card">📚 Reading</div>
+      <div class="hobby-card">🎮 Gaming</div>
+      <div class="hobby-card">🍳 Cooking</div>
+      <div class="hobby-card">🎤 Singing</div>
+     
+    </div>
+
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 This website is for educational purposes only | Auni Asfarina</p>
+  </footer>
+  </script>
+
+</body>
+</html>

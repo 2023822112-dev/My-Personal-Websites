@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auni Asfarina's Personal Website</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color:#FFB6C1; 
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /*------header-------------*/
+    header {
+      background: url('images/header.jpg') no-repeat center center;
+      background-size: cover; 
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      padding: 40px 0 10px;
+      align-items: center;   
+    }
+
+    /* ----------Navbar ---------- */
+    nav {
+  position: static;
+  top: 10px;
+  z-index: 20;
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: linear-gradient(to right, #F9F5EE, #FAF7FF);
+  padding: 20px 25px;
+  border-radius: 50px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 25.5px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #6A4BA3;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #E9DFFF;
+  color: #4a2f77;
+}
+    /* ---------- Main Section ---------- */
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 60px auto;
+      background: #FAF7FF;
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    main p {
+      line-height: 1.5;
+      max-width: 700px;
+      margin: 15px auto;
+      font-size: 1rem;
+    }
+    /*---------Social Icons-----------*/
+    .social-links img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .social-links img:hover {
+      transform: scale(1.1);
+    }
+
+    /*---------Footer------------- */
+    footer {
+      text-align: center;
+      background: #DDA0DD;
+      color: white;
+      padding: 5px 0;
+      margin-top: auto;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">HOME</a></li>
+      <li><a href="aboutme.html">ABOUT ME</a></li>
+      <li><a href="family.html">FAMILY</a></li>
+      <li><a href="experience.html">EXPERIENCE</a></li>
+      <li><a href="friends.html">FRIENDS</a></li>
+      <li><a href="education.html">EDUCATION</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="favourites.html">FAVOURITES</a></li>
+      <li><a href="hobby.html">HOBBY</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <audio autoplay>
+      <source src="audio/God of Music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <p>Hi! I am Auni Asfarina, and I built this website for my IMD318 subject's requirement. Through this site, you’ll get to know me—my family, experiences, friends, education, gallery, favourites, and hobbies!</p>
+
+    <p>Let’s explore more about my life journey here!</p>
+
+    <div class="social-links" style="margin-top: 15px;">
+      <a href="https://www.facebook.com/share/17Ue1HyGVX/" target="_blank"><img src="images/facebook.jpg" alt="Facebook"></a>
+      <a href="https://www.instagram.com/auniasfarina" target="_blank"><img src="images/ig.jpg" alt="Instagram"></a>
+      <a href="https://youtube.com/@auniasfarina2259?si=8CHZuGGehFdcYq05" target="_blank"><img src="images/youtube.jpg" alt="YouTube"></a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 This website is for educational purposes only | Auni Asfarina</p>
+  </footer>
+</body>
+</html>

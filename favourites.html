@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Auni Asfarina's Personal Website</title>
+<style>
+
+/* General Page Setup */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFB6C1;
+  color: #a1a1a1;
+  display: flex;
+  flex-direction: column;
+  min-height: 150vh;
+}
+
+header {
+  background: url('images/header.jpg') no-repeat center center;
+  background-size: cover; 
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 10px;
+  align-items: center;   
+}
+
+/* NAVBAR  */
+nav {
+  position: static;
+  top: 10px;
+  z-index: 20;
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: linear-gradient(to right, #F9F5EE, #FAF7FF);
+  padding: 20px 25px;
+  border-radius: 50px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #6A4BA3;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #E9DFFF;
+  color: #4a2f77;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  text-align: center;
+  background-color:#DDA0DD;
+  padding: 50px 40px;
+  margin: 20px auto;
+  width: 95%;
+  max-width: 1050px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+main h2 {
+  color: #fff0fa;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+
+main p {
+  max-width: 1000px;
+  margin: 10px auto;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+/* ===== FAVOURITE SECTION ===== */
+.fav-section {
+  margin-top: 40px;
+}
+
+
+.fav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.fav-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.fav-card:hover {
+  transform: translateY(-6px);
+}
+
+.fav-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.fav-card h3 {
+  color: purple;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.fav-card p {
+  color: #4a2f77;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  background: #DDA0DD;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: auto;
+}
+</style>
+</head>
+
+<body>
+<header></header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="aboutme.html">ABOUT ME</a></li>
+    <li><a href="family.html">FAMILY</a></li>
+    <li><a href="experience.html">EXPERIENCE</a></li>
+    <li><a href="friends.html">FRIENDS</a></li>
+    <li><a href="education.html">EDUCATION</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    <li><a href="favourites.html">FAVOURITES</a></li>
+    <li><a href="hobby.html">HOBBY</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <h2> MY FAVOURITE💜</h2>
+
+  <div class="fav-section">
+
+    <!-- GRID 3 FAV ITEMS -->
+    <div class="fav-grid">
+
+      <!-- FAV 1: KPOP IDOL -->
+      <div class="fav-card">
+        <img src="images/fav1.jpg" alt="Kpop Idol">
+        <h3>K-Pop Idol</h3>
+        <p>
+          The way they inspire me to be the best version of myself.  
+          Their songs always cheer me up and make everything feel brighter 💜✨  
+        </p>
+      </div>
+
+      <!-- FAV 2: ICE CREAM -->
+      <div class="fav-card">
+        <img src="images/fav2.jpg" alt="Ice Cream">
+        <h3>Ice Cream Dessert</h3>
+        <p>
+          My comfort dessert! 🍦💕   
+          Ice cream never fails to make me happy!  
+        </p>
+      </div>
+
+      <!-- FAV 3: SWITZERLAND -->
+      <div class="fav-card">
+        <img src="images/fav3.jpg" alt="Switzerland">
+        <h3>Switzerland (Dream Place)</h3>
+        <p>
+          A place I dream of visiting someday ✨❄️  
+          Peaceful mountains, crystal lakes & magical snow…  
+          My dream destination.🤍🌨️  
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 This website is for educational purposes only | Auni Asfarina</p>
+</footer>
+
+</body>
+</html>

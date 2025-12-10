@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Auni Asfarina's Personal Website</title>
+<style>
+
+/* Global Style */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #FFB6C1;
+  color: #1a1a1a;
+  animation: fadeIn 0.7s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header {
+      background: url('images/header.jpg') no-repeat center center;
+      background-size: cover; 
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      padding: 40px 0 10px;
+      align-items: center;   
+    }
+
+/*NAVBAR*/
+
+nav {
+  position: static;
+  top: 10px;
+  z-index: 20;
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: linear-gradient(to right, #F9F5EE, #FAF7FF);
+  padding: 20px 25px;
+  border-radius: 50px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #6A4BA3;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #E9DFFF;
+  color: #4a2f77;
+}
+
+/*   MAIN CONTENT  */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 5% 70px 8%;
+  background: #f8f8f8;
+  color: #1a1a1a;
+  gap: 2px;
+  border-radius: 18px;
+  max-width: 1200px;
+  margin: 60px auto 0px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.hero-content {
+  max-width: 55%;
+}
+
+.intro {
+  letter-spacing: 2px;
+  color: #555;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.name-highlight {
+  color: #ff2d85;
+}
+
+.hero-desc {
+  margin-top: 20px;
+  color: #555;
+  line-height: 1.05;
+  max-width: 90%;
+}
+
+.hero-details {
+  margin-top: 25px;
+  color: #333;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.hero-details strong {
+  color: #ff2d85;
+}
+
+.hero-social {
+  display: flex;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+/* Social Icons */
+    .social-links img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .social-links img:hover {
+      transform: scale(1.1);
+    }
+
+.hero-image img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background:  #FFB6C1;
+  color: white;
+  padding: 5px 0;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 5% 60px 5%;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-image img {
+    width: 260px;
+    height: 360px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  }
+
+}
+</style>
+</head>
+<body>
+  <header> </header>
+
+<!-- Sticky Rounded Navbar -->
+<nav>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="aboutme.html">ABOUT ME</a></li>
+    <li><a href="family.html">FAMILY</a></li>
+    <li><a href="experience.html">EXPERIENCE</a></li>
+    <li><a href="friends.html">FRIENDS</a></li>
+    <li><a href="education.html">EDUCATION</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    <li><a href="favourites.html">FAVOURITES</a></li>
+    <li><a href="hobby.html">HOBBY</a></li>
+  </ul>
+</nav>
+
+<main 
+
+    class="hero-section">
+  <div class="hero-content">
+    <p class="intro">WELCOME TO MY WORLD</p>
+    <h1 class="hero-title">
+      Hi, I’m <span class="name-highlight">Auni Asfarina</span><br>
+      a Student.
+    </h1>
+    <p class="hero-desc">
+      <i> Everyone has their own different life experiences which make them who they are.
+      Don't ever compare your life with others and trust Allah's plan.</i> <br>
+      My goal is to make my parents proud and achieve the Dean’s List in my final semester.
+    </p>
+
+    <audio autoplay>
+      <source src="audio/WTS.m4a" type="audio/mpeg">
+    </audio>
+
+    <div class="hero-details">
+      <p><strong>Full Name:</strong> Nur Auni Asfarina Junaidi</p>
+      <p><strong>Glamour Name:</strong> Dino / Oniey🌟</p>
+      <p><strong>State:</strong> Setiu,Terengganu ⛪ </p>
+      <p><strong>Date of Birth:</strong> 13 July 2005 🎂 </p>
+      <p><strong>Occupation:</strong> News Reader 🎥 </p>
+      <p><strong>Email:</strong> auniasfarinajunaidi@gmail.com</p>
+    </div>
+
+
+     <div class="social-links" style="margin-top: 15px;">
+      <a href="https://www.facebook.com/share/17Ue1HyGVX/" target="_blank"><img src="images/facebook.jpg" alt="Facebook"></a>
+      <a href="https://www.instagram.com/auniasfarina" target="_blank"><img src="images/ig.jpg" alt="Instagram"></a>
+      <a href="https://youtube.com/@auniasfarina2259?si=8CHZuGGehFdcYq05" target="_blank"><img src="images/youtube.jpg" alt="YouTube"></a>
+    </div>
+
+  </div>
+  <div class="hero-image">
+    <img src="images/auni2.jpg" alt="Auni Asfarina">
+  </div> 
+
+ 
+</main>
+
+
+<footer>
+  <p>&copy; 2025 This website is for educational purposes only | Auni Asfarina</p>
+</footer>
+
+</body>
+</html>
